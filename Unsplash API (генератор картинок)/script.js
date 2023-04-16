@@ -48,7 +48,7 @@ dayNightTheme = () => {
       let image = document.createElement("div");
       image.className = "img";
       image.style.backgroundImage = "url("+data.results[i].urls.raw + "&w=1366&h=768" +")";
-      image.addEventListener("dblclick", function(){
+      image.addEventListener("click", function(){
         window.open(data.results[i].links.download, '_blank');
       })
       document.querySelector("#grid").appendChild(image);
